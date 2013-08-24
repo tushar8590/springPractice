@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd" >
+    
+    <bean id="duke" class = "com.springaction.springidol.Juggler">
+      <constructor-arg value="15" />
+    </bean>
+ <bean id = "sonnet29" class = "com.springaction.springidol.Sonnet29"></bean>
+ 
+ <bean id="poeticDuke" class="com.springaction.springidol.PoeticJuggler">
+  <constructor-arg value="15"></constructor-arg>
+  <constructor-arg ref="sonnet29"></constructor-arg>
+ </bean>
+ 
+ 
+ <bean id="sax" class="com.springaction.springidol.Saxophone"> </bean>
+ <bean id="kenny" class = "com.springaction.springidol.Instrumentalist">
+   <property name="song" value="Kabira"></property>
+   <property name="instrument" ref="sax"></property>
+ </bean>
+</beans>
