@@ -16,7 +16,7 @@ public class MyMain {
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/springaction/springidol/spring.xml");
 		//Performer performer = (Performer) context.getBean("poeticDuke");
 		Performer performer = (Performer) context.getBean("kenny");
-	    performer.perform(); // calling the performer method    
+	    performer.perform(); // calling the performer method    213213
 
 	}
 
